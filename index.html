@@ -1,35 +1,141 @@
-1.	O medo é real, mas sua coragem também é.
-2.	Sentir medo não significa ser fraco, significa ser humano.
-3.	O medo pode gritar, mas você pode responder com calma.
-4.	Não é preciso eliminar o medo, mas aprender a caminhar com ele.
-5.	Reconhecer o medo já é um passo para enfrentá-lo.
-6.	O medo mostra os riscos, mas a coragem mostra os caminhos.
-7.	Até nos dias de incerteza, sua força permanece.
-8.	Medo não precisa ser prisão, pode ser aprendizado.
-9.	Não permita que o medo impeça você de viver suas possibilidades.
-10.	A coragem nasce justamente quando o medo aparece.
-11.	O medo é um sinal; cabe a você decidir se ele será barreira ou ponte.
-12.	Cada passo, mesmo pequeno, é uma vitória sobre o medo.
-13.	O medo não define sua história, apenas um capítulo dela.
-14.	Você não precisa enfrentar tudo sozinho; pedir ajuda também é coragem.
-15.	O medo tenta paralisar, mas a ação consciente liberta.
-16.	Muitas vezes, o que parece impossível só precisa de um primeiro passo.
-17.	O medo pode alertar, mas não deve comandar.
-18.	Enfrentar o medo não é ausência dele, é avançar apesar dele.
-19.	Você é maior que aquilo que teme.
-20.	O medo não diminui seu valor.
-21.	Respire fundo: cada respiração é um convite para enfrentar o que assusta.
-22.	O medo pode ser temporário, mas sua força é permanente.
-23.	É natural sentir medo do novo, mas é no novo que moram as conquistas.
-24.	O medo pode ser uma sombra, mas não apaga sua luz.
-25.	Ninguém é corajoso sem ter sentido medo antes.
-26.	O medo pode se transformar em motivação para crescer.
-27.	Escutar o medo ajuda, obedecê-lo cegamente aprisiona.
-28.	O medo pode limitar, mas a esperança expande.
-29.	Cada vez que você enfrenta o medo, ele perde um pouco da força.
-30.	O medo protege, mas não precisa controlar.
-31.	Sua coragem não é ausência de medo, é sua resposta a ele.
-32.	O medo pode te parar por instantes, mas não para sempre.
-33.	O que você teme pode se tornar aprendizado.
-34.	Aceitar o medo é o primeiro passo para superá-lo.
-35.	Mesmo com medo, você continua capaz de conquistar.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Setembro Amarelo — Medo</title>
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0b0f14;
+      color:#fefce8;
+      display:flex;align-items:center;justify-content:center;
+      height:100vh;text-align:center;
+    }
+    .container{
+      background:#111827;
+      padding:24px;
+      border-radius:12px;
+      max-width:600px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.45);
+    }
+    .brand{
+      font-size:.9rem;
+      opacity:.6;
+      margin-bottom:12px;
+    }
+    .badge{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(250,204,21,.12);
+      border:1px solid rgba(250,204,21,.35);
+      color:#fef9c3;
+      font-size:.85rem;
+      margin-bottom:14px;
+    }
+    .mensagem{
+      font-size:1.4rem;
+      font-weight:bold;
+      margin:16px 0;
+    }
+    .sub{font-size:.9rem;opacity:.7}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">Arcofoods — alimentos, sorrisos e bebidas</div>
+    <div class="badge">Setembro Amarelo</div>
+    <div id="mensagem" class="mensagem">Carregando...</div>
+    <div class="sub">Você não está sozinho. Falar é um passo de coragem.</div>
+  </div>
+
+  <script>
+    (function(){
+      const mensagens = [
+        "O medo é real, mas sua coragem também é.",
+        "Sentir medo não significa ser fraco, significa ser humano.",
+        "O medo pode gritar, mas você pode responder com calma.",
+        "Não é preciso eliminar o medo, mas aprender a caminhar com ele.",
+        "Reconhecer o medo já é um passo para enfrentá-lo.",
+        "O medo mostra os riscos, mas a coragem mostra os caminhos.",
+        "Até nos dias de incerteza, sua força permanece.",
+        "Medo não precisa ser prisão, pode ser aprendizado.",
+        "Não permita que o medo impeça você de viver suas possibilidades.",
+        "A coragem nasce justamente quando o medo aparece.",
+        "O medo é um sinal; cabe a você decidir se ele será barreira ou ponte.",
+        "Cada passo, mesmo pequeno, é uma vitória sobre o medo.",
+        "O medo não define sua história, apenas um capítulo dela.",
+        "Você não precisa enfrentar tudo sozinho; pedir ajuda também é coragem.",
+        "O medo tenta paralisar, mas a ação consciente liberta.",
+        "Muitas vezes, o que parece impossível só precisa de um primeiro passo.",
+        "O medo pode alertar, mas não deve comandar.",
+        "Enfrentar o medo não é ausência dele, é avançar apesar dele.",
+        "Você é maior que aquilo que teme.",
+        "O medo não diminui seu valor.",
+        "Respire fundo: cada respiração é um convite para enfrentar o que assusta.",
+        "O medo pode ser temporário, mas sua força é permanente.",
+        "É natural sentir medo do novo, mas é no novo que moram as conquistas.",
+        "O medo pode ser uma sombra, mas não apaga sua luz.",
+        "Ninguém é corajoso sem ter sentido medo antes.",
+        "O medo pode se transformar em motivação para crescer.",
+        "Escutar o medo ajuda, obedecê-lo cegamente aprisiona.",
+        "O medo pode limitar, mas a esperança expande.",
+        "Cada vez que você enfrenta o medo, ele perde um pouco da força.",
+        "O medo protege, mas não precisa controlar.",
+        "Sua coragem não é ausência de medo, é sua resposta a ele.",
+        "O medo pode te parar por instantes, mas não para sempre.",
+        "O que você teme pode se tornar aprendizado.",
+        "Aceitar o medo é o primeiro passo para superá-lo.",
+        "Mesmo com medo, você continua capaz de conquistar."
+      ];
+
+      const KEY_PREFIX = "medo_v1";
+      const KEY_ORDER = KEY_PREFIX + "_ordemMensagens";
+      const KEY_POS   = KEY_PREFIX + "_posicaoMensagem";
+
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+
+      function getOrder() {
+        try {
+          const saved = localStorage.getItem(KEY_ORDER);
+          if (saved) {
+            const arr = JSON.parse(saved);
+            if (Array.isArray(arr) && arr.length === mensagens.length) return arr;
+          }
+        } catch(e){}
+        return shuffle([...Array(mensagens.length).keys()]);
+      }
+
+      let ordem = getOrder();
+      let pos = 0;
+      try {
+        pos = parseInt(localStorage.getItem(KEY_POS) || "0", 10);
+        if (Number.isNaN(pos)) pos = 0;
+      } catch(e){ pos = 0; }
+
+      if (pos >= ordem.length) {
+        ordem = shuffle([...Array(mensagens.length).keys()]);
+        pos = 0;
+      }
+
+      const idx = ordem[pos];
+      const texto = mensagens[idx] ?? "Respire. Você é maior que o medo.";
+      const el = document.getElementById("mensagem");
+      if (el) el.textContent = texto;
+
+      try {
+        localStorage.setItem(KEY_ORDER, JSON.stringify(ordem));
+        localStorage.setItem(KEY_POS, String(pos + 1));
+      } catch(e){}
+    })();
+  </script>
+</body>
+</html>
